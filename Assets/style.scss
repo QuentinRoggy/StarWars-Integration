@@ -75,7 +75,7 @@ img {
             top: 0;
             left: 0;
             transform: translate3d(0,0,0);
-            transition: transform transitionDuration ease, opacity transitionDuration ease;
+            transition: transform $transitionDuration ease, opacity $transitionDuration ease;
   
             &:not(.active) {
               opacity: 0;
@@ -100,7 +100,7 @@ img {
             position: absolute;
             left: 0;
             opacity: 1;
-            transition: transform transitionDuration ease, opacity transitionDuration ease;
+            transition: transform $transitionDuration ease, opacity $transitionDuration ease;
   
             &:not(.active) {
               opacity: 0;

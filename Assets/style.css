@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "GT";
+  src: url("./Fonts/GT-Ultra-Standard-Bold-Trial.woff2") format("woff2");
+}
+* {
+  box-sizing: border-box;
+  color: #FFF38A;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+  background-color: #060447;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+body {
+  width: 70%;
+  height: 100vh;
+  margin: 5% auto 5% auto;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main--container {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main--container .movie--container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main--container .movie--container .section--left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main--container .movie--container .section--left .description--container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 2vw;
+}
+.main--container .movie--container .section--left .description--container .logo--container {
+  width: 100%;
+  height: 110px;
+  position: relative;
+}
+.main--container .movie--container .section--left .description--container .logo--container img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0);
+  transition: transform transitionDuration ease, opacity transitionDuration ease;
+}
+.main--container .movie--container .section--left .description--container .logo--container img:not(.active) {
+  opacity: 0;
+  transform: translate3d(30%, 0, 0);
+}
+.main--container .movie--container .section--left .description--container .logo--container img.leave {
+  opacity: 0;
+  transform: translate3d(-30%, 0, 0);
+}
+.main--container .movie--container .section--left .description--container .title_container {
+  position: relative;
+  width: 100%;
+  height: 70px;
+}
+.main--container .movie--container .section--left .description--container .title_container h1 {
+  margin-top: 5px;
+  font-size: 2vw;
+  position: absolute;
+  left: 0;
+  opacity: 1;
+  transition: transform transitionDuration ease, opacity transitionDuration ease;
+}
+.main--container .movie--container .section--left .description--container .title_container h1:not(.active) {
+  opacity: 0;
+  transform: translate3d(30%, 0, 0);
+}
+.main--container .movie--container .section--left .description--container .title_container h1.leave {
+  opacity: 0;
+  transform: translate3d(-30%, 0, 0);
+}
+.main--container .movie--container .section--left .description--container .text_container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.main--container .movie--container .section--left .description--container .text_container p {
+  font-weight: 200;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  transition: transform 500ms ease, opacity 500ms ease;
+}
+.main--container .movie--container .section--left .description--container .text_container p:not(.active) {
+  opacity: 0;
+  transform: translate3d(30%, 0, 0);
+}
+.main--container .movie--container .section--left .description--container .text_container p.leave {
+  opacity: 0;
+  transform: translate3d(-30%, 0, 0);
+}
+.main--container .movie--container .section--left .year--container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.main--container .movie--container .section--left .year--container span {
+  font-family: "GT";
+  font-size: 11vw;
+  font-weight: 700;
+  position: absolute;
+  left: 215px;
+  transition: transform 500ms ease, opacity 500ms ease;
+}
+.main--container .movie--container .section--left .year--container span.first {
+  left: 0;
+}
+.main--container .movie--container .section--left .year--container span:not(.active) {
+  opacity: 0;
+  transform: translate3d(30%, 0, 0);
+}
+.main--container .movie--container .section--left .year--container span.leave {
+  opacity: 0;
+  transform: translate3d(-30%, 0, 0);
+}
+.main--container .movie--container .section--right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.main--container .movie--container .section--right img {
+  object-fit: cover;
+  transform: translate3d(0, 0, 0);
+  transition: transform 500ms ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main--container .movie--container .section--right img:not(.active) {
+  transform: translate3d(100%, 0, 0);
+}
+.main--container nav {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px 0 10px 0;
+}
+.main--container nav .arrow--container {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.main--container nav .right-arrow {
+  opacity: 0.5;
+}
+.main--container nav .right-arrow:hover {
+  cursor: pointer;
+}
+.main--container nav .right-arrow.active {
+  opacity: 1;
+}
+.main--container nav .left-arrow {
+  transform: rotate(180deg);
+  opacity: 0.5;
+}
+.main--container nav .left-arrow:hover {
+  cursor: pointer;
+}
+.main--container nav .left-arrow.active {
+  opacity: 1;
+}
+.main--container nav .stepper {
+  width: 70%;
+}
+.main--container nav .stepper ul {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.main--container nav .stepper ul li {
+  position: relative;
+  flex-grow: 1;
+}
+.main--container nav .stepper ul li .line:before, .main--container nav .stepper ul li .line:after {
+  content: "";
+  position: absolute;
+  background: #FFF38A;
+  height: 1px;
+  right: 0px;
+  left: 32px;
+  bottom: 50%;
+  opacity: 0.3;
+  transform-origin: left;
+}
+.main--container nav .stepper ul li .line:after {
+  opacity: 1;
+  transform: scaleX(0);
+  transition: transform 500ms ease-out;
+}
+.main--container nav .stepper ul li .line.active:after {
+  transform: scaleX(1);
+}
+.main--container nav .stepper ul li:after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+  background: #FFF38A;
+  border-radius: 50%;
+}
+.main--container nav .stepper ul li.active:after {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

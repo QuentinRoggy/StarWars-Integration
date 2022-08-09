@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/style.css">
+  <title>Star-Wars</title>
+</head>
+<body>
+  <div class="main--container">
+    <div class="movie--container">
+      <section class="section--left">
+        <div class="description--container">
+          <div class="logo--container">
+            <img src="./Assets/Images/NouvelEspoirVector.png" alt="Nouvel espoir logo" class="active" data-slide="1"/>
+            <img src="./Assets/Images/EmpireContreAttaqueVector.png" alt="Nouvel espoir logo" class=""data-slide="2" />
+            <img src="./Assets/Images/RetourDuJediVector.png" alt="Nouvel espoir logo" class="" data-slide="3"/>
+          </div>
+          <div class="title_container">
+            <h1 class="active" data-slide="1">Un nouvel espoir</h1>
+            <h1 class=""data-slide="2">L'empire contre-attaque</h1>
+            <h1 class=""data-slide="3">Le retour du Jedi</h1>
+          </div>
+
+          <div class="text_container">
+            <p class="active" data-slide="1">C'est le premier opus de la saga Star Wars par sa date de sortie, mais le quatrième selon l'ordre chronologique de l'histoire.</p>
+            <p data-slide="2">La guerre entre le maléfique Empire galactique et son antagoniste, l’Alliance rebelle, bat son plein.</p>
+            <p data-slide="3">Le maléfique Empire galactique construit une nouvelle station spatiale Étoile de la mort pour anéantir définitivement l'Alliance rebelle.</p>
+          </div>
+        </div>
+        <div class="year--container">
+          <span class="active first">19</span>
+          <span class="active" data-years="1">77</span>
+          <span data-years="2">80</span>
+          <span data-years="3">83</span>
+        </div>
+      </section>
+
+      
+      
+      <section class="section--right">
+        <img src="./Assets/Images/NouvelEspoir.png" alt="Nouvel Espoir poster" class="active" data-poster="1">
+        <img src="./Assets/Images/EmpireContreAttaque.png" alt="L'enmpire contre attaque poster" class="" data-poster="2">
+        <img src="./Assets/Images/RetourDuJedi.png" alt="Le retour du Jedi poster" class="" data-poster="3">
+      </section>
+    </div>
+
+    <nav>
+      <div class="arrow--container">
+        <div class="left-arrow--container">
+          <img src="./Assets/Images/arrow.png" alt="left arrow" class="left-arrow">
+        </div>
+        <div class="right-arrow--container">
+          <img src="./Assets/Images/arrow.png" alt="right arrow" class="right-arrow active">
+        </div>
+      </div>
+      <div class="stepper">
+        <ul>
+          <li data-nav="1" class="active">
+            <div data-line="2" class="line"></div>
+          </li>
+          <li data-nav="2" class="">
+            <div data-line="3" class="line"></div>
+          </li>
+          <li data-nav="3">
+            <div data-line="4" class="line"></div>
+          </li>
+          <li data-nav="4">
+            <div data-line="5" class="line"></div>
+          </li>
+          <li data-nav="5">
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <script src="./Assets/app.js"></script>
+</body>
+</html>

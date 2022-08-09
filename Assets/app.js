@@ -98,8 +98,12 @@ const app = {
 
     if(direction === 'right') {
       app.postersElts[app.position].classList.add('active');
+      app.postersElts[app.position - 1].classList.remove('active');
+      app.postersElts[app.position - 1].classList.add('leave');
 
     } else if (direction === 'left') {
+      app.postersElts[app.position].classList.remove('leave');
+      app.postersElts[app.position].classList.add('active');
       app.postersElts[app.position + 1].classList.remove('active');
     }
   },

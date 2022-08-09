@@ -170,7 +170,7 @@ img {
     }
 
     .section--right {
-      width: 50%;
+      width: 39%;
       height: 100%;
       display: flex;
       position: relative;
@@ -187,7 +187,11 @@ img {
         
         &:not(.active) {
           transform: translate3d(100%, 0, 0);
-        }        
+        }
+        
+        &.leave{
+          transform: translate3d(-100%, 0, 0);
+        } 
       }
     }
   }

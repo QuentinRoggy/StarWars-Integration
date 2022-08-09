@@ -150,7 +150,7 @@ img {
   transform: translate3d(-30%, 0, 0);
 }
 .main--container .movie--container .section--right {
-  width: 50%;
+  width: 39%;
   height: 100%;
   display: flex;
   position: relative;
@@ -166,6 +166,9 @@ img {
 }
 .main--container .movie--container .section--right img:not(.active) {
   transform: translate3d(100%, 0, 0);
+}
+.main--container .movie--container .section--right img.leave {
+  transform: translate3d(-100%, 0, 0);
 }
 .main--container nav {
   width: 100%;
